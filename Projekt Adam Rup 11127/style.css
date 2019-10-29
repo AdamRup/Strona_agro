@@ -1,0 +1,324 @@
+html{
+    position: relative;
+    min-height: 100%;;
+}
+
+body{
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* nav */
+.navbar{
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Logo{
+    color:#fff;
+}
+
+button span{
+    color: #fff;
+}
+
+.active{
+    color: #fff;
+    font-weight: bold;
+}
+
+button{
+    color: #fff;
+}
+
+.dropdown-menu{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #6c757d;
+}
+
+nav a span{
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* carousel */
+.carousel-caption h5{
+    height: 4vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    animation-name: animation;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+}
+
+.fsize {
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes animation{
+    0%{height: 0}
+    25%{height: 1vh}
+    50%{height: 2vh}
+    75%{height: 3vh}
+    100%{height: 4vh}
+}
+
+
+/* footer */
+footer{
+    background-color: #000;
+    left: 0;
+    position:absolute;
+	bottom:0;
+	width:100%;
+    height:6vh;
+}
+
+
+
+
+/* section */
+section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section p{
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+section b{
+    font-size: 20px;
+    color: #499b2b;
+}
+
+section iframe{
+    margin-top: 10px;
+}
+
+
+
+
+
+/* about */
+#about-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#greenVelo-logo{
+    transition: 0.3s transform linear;
+}
+
+#greenVelo-logo:hover{
+    transform: scale(1.1);
+    transition: 0.3s transform linear;
+}
+
+
+
+/* offer */
+#offer-text{
+    padding: 10px 10px 10px 10px;
+    margin-top: 72px;
+}
+#offer-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1px;
+    text-align: left;
+    font-size: 15px;
+}
+#offer-text h3{
+    color: #499b2b;
+    margin-top: 1px;
+    text-align: left;
+}
+
+.offer-sm-text{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px 5px 5px 5px;
+    margin: 10px 10px 10px 10px;
+}
+
+
+
+/* turistic */
+#turi-text p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* biologic */
+#bio-text p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* info */
+#info-text{
+    margin-top: 72px;
+}
+
+#info-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+/* contact */
+#contact-text{
+    margin-top: 25vh;
+    margin-bottom: 19vh;
+}
+
+#contact-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#map{
+    margin-bottom: 10px;
+}
+
+
+
+/* media */
+@media (max-width: 1025px) {
+    .fsize{
+        width: 100vw;
+        height: auto;
+    }
+
+    section{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1113px){
+    .info-text p{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #about-text p{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #contact-text{
+        font-size: 18px;
+        margin-top: 72px;
+        margin-bottom: auto;
+    }
+
+    #offer-text{
+        font-size: 18px;
+        margin-top: 72px;
+        margin-bottom: auto;
+    }
+}
+
+@media (max-width: 769px){
+    #about-text p{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .info-text p{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #about-text p{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #contact-text{
+        font-size: 15px;
+        margin-top: 72px;
+        margin-bottom: auto;
+    }
+
+    #offer-text{
+        font-size: 15px;
+        margin-top: 72px;
+        margin-bottom: auto;
+    }
+}
+
+@media (max-width: 439px){
+    .carousel-caption h5{
+        font-size: 15px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media(max-width: 415px){
+    #about-text p{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #info-text p{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #about-text p{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #contact-text{
+        font-size: 14px;
+        margin-top: 72px;
+        margin-bottom: auto;
+    }
+
+    #offer-text{
+        font-size: 14px;
+        margin-top: 72px;
+        margin-bottom: auto;
+    }
+
+    #bio-text p{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #turi-text p{
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
